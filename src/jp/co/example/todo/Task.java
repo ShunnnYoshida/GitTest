@@ -1,13 +1,10 @@
 package jp.co.example.todo;
 
-/**
- * TODO 1件分を表すクラス.
- */
 public class Task {
 
-    private final int id;      // 連番ID
+    private final int id;      
     private final String title;
-    private boolean completed; // 完了しているかどうか
+    private boolean completed;
 
     public Task(int id, String title) {
         this.id = id;
