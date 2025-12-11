@@ -1,36 +1,29 @@
-package jp.co.example.todo;
+package jp.example.app;
 
 public class Task {
 
-    private final int id;      
-    private final String title;
-    private boolean completed;
+    private int id;
+    private String name;
 
-    public Task(int id, String title) {
+    // コンストラクタ
+    public Task(int id, String name) {
         this.id = id;
-        this.title = title;
-        this.completed = false;
+        this.name = name;
     }
 
+    // ID の getter
     public int getId() {
         return id;
     }
 
-    public String getTitle() {
-        return title;
+    // Name の getter
+    public String getName() {
+        return name;
     }
 
-    public boolean isCompleted() {
-        return completed;
-    }
-
-    public void complete() {
-        this.completed = true;
-    }
-
+    // デバッグしやすさのため toString を実装
     @Override
     public String toString() {
-        String status = completed ? "[完了]" : "[未完了]";
-        return String.format("ID=%d %s %s", id, status, title);
+        return "Task{id=" + id + ", name='" + name + "'}";
     }
 }
