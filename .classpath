@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="output" path="bin"/>
+    <!-- 自プロジェクトのソース -->
+    <classpathentry kind="src" path="src"/>
+
+    <!-- Common プロジェクトを参照（ここが今回のポイント） -->
+    <classpathentry kind="src" path="/Common"/>
+
+    <!-- JRE -->
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+
+    <!-- 出力先 -->
+    <classpathentry kind="output" path="bin"/>
 </classpath>
