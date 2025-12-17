@@ -7,7 +7,6 @@ public class Main {
 
         System.out.println("=== 実行開始 ===");
 
-        // 共通関数の利用
         String path = CommonUtil.createIfNotExists("x.java");
         System.out.println("ファイル確認: " + path);
 
