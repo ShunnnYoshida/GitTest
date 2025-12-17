@@ -11,7 +11,7 @@ public class Task {
         this.name = name;
     }
 
-    // ID の getter
+    // ID  getter
     public int getId() {
         return id;
     }
